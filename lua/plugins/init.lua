@@ -18,7 +18,7 @@ return {
 
   {
     "milanglacier/minuet-ai.nvim",
-    event = "InsertEnter",
+    lazy = false,
     config = function()
       require "configs.minuet"
     end,
