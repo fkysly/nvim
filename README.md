@@ -1,9 +1,26 @@
-**This repo is supposed to be used as config by NvChad users!**
+**NvChad starter config** for LLM training / agent work.
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+Based on [NvChad/starter](https://github.com/NvChad/starter). Extra language support is Python (pyright + ruff) plus treesitter for toml/yaml/json/markdown/bash.
+
+## New machine
+
+Needs Neovim 0.12+ (`nvim-treesitter` `main` branch).
+
+```bash
+git clone git@github.com:fkysly/nvim.git ~/.config/nvim
+nvim
+```
+
+First launch installs plugins via lazy.nvim. Then:
+
+```
+:TSInstallAll
+```
+
+If Python LSP is missing: `:MasonInstall pyright ruff` or install `ruff` / `pyright` on PATH.
+
+Upstream starter: `git remote add upstream https://github.com/NvChad/starter.git`
 
 # Credits
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's. It made a lot of things easier!
