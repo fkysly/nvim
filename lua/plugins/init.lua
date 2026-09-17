@@ -17,6 +17,14 @@ return {
   -- { import = "nvchad.blink.lazyspec" },
 
   {
+    "milanglacier/minuet-ai.nvim",
+    event = "InsertEnter",
+    config = function()
+      require "configs.minuet"
+    end,
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {

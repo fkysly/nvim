@@ -19,6 +19,8 @@ First launch installs plugins via lazy.nvim. Then:
 
 If Python LSP is missing: `:MasonInstall pyright ruff` or install `ruff` / `pyright` on PATH.
 
+Grok ghost-text completion reads `XAI_API_KEY` (optional `GROK_MODELS_BASE_URL`). In insert mode: `Option-l` accept, `Option-j` one line, `Option-]` / `Option-[` cycle, `Option-e` dismiss.
+
 Upstream starter: `git remote add upstream https://github.com/NvChad/starter.git`
 
 # Credits
